@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#! /usr/bin/env node
 
 const arg = process.argv;
 const path = arg[arg.length - 1];

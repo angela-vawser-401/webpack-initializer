@@ -9,7 +9,7 @@ const createGitignore = path => {
   .env
   `
 
-  write(path + './.gitignore', gitignore);
+  write(path + '/.gitignore', gitignore);
 };
 
 module.exports = createGitignore;

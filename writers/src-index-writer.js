@@ -1,7 +1,7 @@
 const { write } = require('./writer');
 
 const createIndex = path => {
-  const index = `<!DOCTYPE html>
+  const indexHtml = `<!DOCTYPE html>
   <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -13,18 +13,19 @@ const createIndex = path => {
     <div id="root"></div>
   </body>
   </html>`;
-  write(str, `${path}/src/index.html`);
-  const strTwo = `import React from 'react';
+
+  const indexJs = `import React from 'react';
   import { render } from 'react-dom';
   import App from './components/App';
   
   render(
     <App />,
     document.getElementById('root')
-  );
-  `;
+    );
+    `;
 
-  write(path + './src/index.js', index);
+  write(path + '/src/index.html', indexHtml);
+  write(path + '/src/index.js', indexJs);
 };
 
 module.exports = createIndex;

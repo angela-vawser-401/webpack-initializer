@@ -87,7 +87,7 @@ const createEslint = path => {
     }
   }
 
-  writeJson(path + './.eslintrc', eslint);
+  writeJson(path + '/.eslintrc', eslint);
 };
 
 module.exports = createEslint;
