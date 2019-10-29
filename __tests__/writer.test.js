@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { writeJson } = require('../writer');
+const { writeJson } = require('../writers/writer');
 
 describe('Will it mock?', () => {
   it('should mock a file', () => {
