@@ -1,4 +1,4 @@
-const installer = require('../installer');
+const installer = require('../dependencies/installer');
 const childProcess = require('child_process');
 
 
